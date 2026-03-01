@@ -1,6 +1,6 @@
 .banner {
     height: 50vh;
-    background-image: url(/assets/images/Banner-TrangAn.jpg);
+    background-image: url(./assets/images/Banner-TrangAn.jpg);
     background-size: cover;
     background-position: center;
     flex-direction: column;
