@@ -1,0 +1,23 @@
+.banner {
+    height: 50vh;
+    background-image: url(/assets/images/Banner-TrangAn.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color: #ffffff;
+    text-align: left;
+    padding: 50px 20px;
+    opacity: 80%;
+}
+
+.banner h1 {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .banner h1 {font-size: 2rem;}
+    .display-3 {font-size: 1.5rem;}
+}
