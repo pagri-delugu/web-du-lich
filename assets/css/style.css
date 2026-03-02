@@ -68,6 +68,7 @@ section, footer {
 /* thẻ sản phẩm */
 .card-product {
   margin-bottom: 25px;
+  border-radius: 40px;
 }
 
 .card-product:hover {

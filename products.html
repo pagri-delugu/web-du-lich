@@ -11,218 +11,226 @@
 </head>
 <body>
     
+    <!--Thanh điều hướng-->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
 
+            <!-- brand -->
             <a href="./index.html" class="navbar-brand">
                 <img src="./assets/images/logo.jpg" alt="mybrand" class="img-thumbnail img-fluid" width="40" height="40">
                 Traveleeka
             </a>
 
-            <form role="search">
-                <div class="input-group">
-                    <input type="search" class="form-control" placeholder="Tìm kiếm">
-                    <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-            </form>
-
+            <!-- toggle ẩn các nút -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContents">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navContents">
+
+                <!-- thanh tìm kiếm -->
+                <form role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Tìm kiếm">
+                        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+
+                <!-- các nút điều hướng -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Xem thêm...</a>
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Danh mục tour</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./products.html" class="dropdown-item">Danh mục sản phẩm</a></li>
-                            <li><a href="./blog.html" class="dropdown-item">Blog</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a href="" class="dropdown-item">Liên hệ</a></li>
+                            <li><a href="./products.html" class="dropdown-item">Tour dài ngày</a></li>
+                            <li><a href="./products.html" class="dropdown-item">Tour ngắn ngày</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="./cart.html" class="nav-link">Giỏ hàng</a></li>
+                    <li class="nav-item"><a href="./cart.html" class="nav-link">Đặt chỗ của tôi</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
                     <li class="nav-item"><a href="./login.html" class="nav-link">Đăng nhập</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    <section class="container py-5"> <!--featured collection-->
-        <h1 class="display-3 py-5" style="text-align: center;">Tìm tour du lịch hấp dẫn cùng Traveleeka</h1>
-        <div class="row">
+    <main class="container py-5"> <!--featured collection-->
+        <section>
+            <h1 class="display-3 py-5" style="text-align: center;">Tìm tour du lịch hấp dẫn cùng Traveleeka</h1>
+            <div class="row">
 
-            <section class="filter-bar col-lg-3 col-md-4 col-sm-12"> <!--bộ lọc-->
-                <div class="card card-body">
-                    <h5><i class="fa-solid fa-filter"></i> Bộ lọc</h5>
+                <div class="filter-bar col-lg-3 col-md-4 col-sm-12"> <!--bộ lọc-->
+                    <div class="card card-body">
+                        <h5><i class="fa-solid fa-filter"></i> Bộ lọc</h5>
 
-                    <form>
-                        <div class="py-1"> <!--Giá tiền-->
-                            <label for="priceRange" class="form-label">Giá tiền</label>
-                            <input type="range" class="form-range" min="0" max="25000000" value="1000000" id="priceRange">
-                            <output for="priceRange" id="rangeValue" aria-hidden="true"></output>VNĐ
+                        <form>
+                            <div class="py-1"> <!--Giá tiền-->
+                                <label for="priceRange" class="form-label">Giá tiền</label>
+                                <input type="range" class="form-range" min="0" max="5000" value="3500" id="priceRange">
+                                $<output for="priceRange" id="rangeValue" aria-hidden="true"></output>
 
-                            <script>
-                                const rangeInput = document.getElementById('priceRange');
-                                const rangeOutput = document.getElementById('rangeValue');
+                                <script>
+                                    const rangeInput = document.getElementById('priceRange');
+                                    const rangeOutput = document.getElementById('rangeValue');
 
-                                rangeOutput.textContent = rangeInput.value;
+                                    rangeOutput.textContent = rangeInput.value;
 
-                                rangeInput.addEventListener('input', function() {
-                                    rangeOutput.textContent = this.value;
-                                });
-                            </script>
-                        </div>
-                        <div class="py-1"> <!--Đánh giá-->
-                            <p>Đánh giá</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="oneStar">
-                                <label class="form-check-label" for="oneStar">
-                                    <i class="fa-solid fa-star"></i>
-                                </label>
+                                    rangeInput.addEventListener('input', function() {
+                                        rangeOutput.textContent = this.value;
+                                    });
+                                </script>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="twoStar">
-                                <label class="form-check-label" for="twoStar">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </label>
+                            <div class="py-1"> <!--Đánh giá-->
+                                <p>Đánh giá</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="oneStar">
+                                    <label class="form-check-label" for="oneStar">
+                                        <i class="fa-solid fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="twoStar">
+                                    <label class="form-check-label" for="twoStar">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="threeStar">
+                                    <label class="form-check-label" for="threeStar">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="fourStar">
+                                    <label class="form-check-label" for="fourStar">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="fiveStar">
+                                    <label class="form-check-label" for="fiveStar">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="threeStar">
-                                <label class="form-check-label" for="threeStar">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </label>
+                            <div class="py-1"> <!--Tiện nghi-->
+                                <p>Tiện nghi</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="breakfast">
+                                    <label class="form-check-label" for="breakfast">
+                                        Có ăn sáng
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="airportTransport">
+                                    <label class="form-check-label" for="airportTransport">
+                                        Đưa đón sân bay
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="fourStar">
-                                <label class="form-check-label" for="fourStar">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="fiveStar">
-                                <label class="form-check-label" for="fiveStar">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="py-1"> <!--Tiện nghi-->
-                            <p>Tiện nghi</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="breakfast">
-                                <label class="form-check-label" for="breakfast">
-                                    Có ăn sáng
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="airportTransport">
-                                <label class="form-check-label" for="airportTransport">
-                                    Đưa đón sân bay
-                                </label>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Áp dụng</button>
-                    </form>
+                            <button class="btn btn-primary" type="submit">Áp dụng</button>
+                        </form>
 
-                </div>
-            </section>
-
-            <div class="col-lg-9 col-md-8 col-sm-12"> <!--sản phẩm-->
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+
+                <div class="col-lg-9 col-md-8 col-sm-12"> <!--sản phẩm-->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card card-product h-60">
-                            <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="header-5">Hội An 5n4đ</h5>
-                                <p class="price">$3600</p>
-                                <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
-                                <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card card-product h-60">
+                                <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="header-5">Hội An 5n4đ</h5>
+                                    <p class="price">$3600</p>
+                                    <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                                    <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="shadow-lg mt-auto py-5">
         <div class="container">
