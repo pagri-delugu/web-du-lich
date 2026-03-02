@@ -7,28 +7,36 @@
 /* nhóm footer */
 footer {
   background-color: #71d6f4;
-}
 
-footer h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #404257;
-}
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #404257;
+    margin-bottom: 20px
+  };
 
-footer p, footer li a {
-  font-size: 16px;
-  color: #6b728e;
-  text-decoration: none;
-}
+  p, a {
+    font-size: 16px;
+    color: #6b728e;
+    text-decoration: none;
+  };
 
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  };
 
-footer li a:hover {
-  text-decoration: none;
-  color: #404257
+  a:hover {
+    text-decoration: none;
+    color: #404257;
+  };
+
+  div.social-links {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 /* padding, margin */
@@ -69,13 +77,14 @@ section, footer {
 .card-product {
   margin-bottom: 25px;
   border-radius: 40px;
+  transition: all 0.5s ease;
 }
 
 .card-product:hover {
   background-color: #ffffff;
   transform: scale(1.05);
   box-shadow: #6b728e 0px 7px 29px 0px;
-  transition: all 0.5s ease;
+  
 }
 
 @media screen and (max-width: 768px) {
