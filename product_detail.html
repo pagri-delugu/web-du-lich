@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/product-detail.css">
 </head>
 <body>
     
@@ -52,27 +53,204 @@
         </div>
     </nav>
     
-    <section class="row py-5">
-        <div class="col-lg-4 col-sm-12 mt-3"> <!--hình cảnh sản phẩm-->
+    <main class="container">
 
-        </div>
-        <div class="col-lg-8 col-sm-12 mt-3"> <!--chi tiết sản phẩm-->
-            <h1 class="display-3">Hội An 5n4đ</h1>
-            <h3><b>$3600</b></h3><p class="text-decoration-line-through">$5000</p>
+        <!-- thông tin tour -->
+        <section class="py-5">
+            <div class="row">
+                
+                <!--chi tiết tour-->
+                <div class="col-12 col-md-6 mt-3"> 
 
-            <ul class="nav nav-tabs" role="tablist">
+                    <h2 class="display-4"><b>Đà Nẵng - Huế - Hội An 5n4đ</b></h1>
+                    <h3 class="price">
+                        $3600
+                        <span class="old-price">$5000</span>
+                    </h3>
+
+                    <p>Hành trình từ Đà Nẵng đến Huế đưa ta băng qua những cung đường ven biển tuyệt đẹp, nơi đèo Hải Vân ôm trọn mây trời và sóng nước. Rời Huế mộng mơ với nét trầm mặc của kinh thành xưa, ta xuôi về Hội An – phố cổ lung linh trong ánh đèn lồng khi đêm xuống. Mỗi điểm dừng chân là một gam màu khác biệt: Đà Nẵng năng động và hiện đại, Huế sâu lắng và cổ kính, Hội An dịu dàng và hoài niệm. Ba thành phố, một hành trình – nơi thiên nhiên, lịch sử và con người hòa quyện tạo nên những ký ức khó quên.</p>
+
+                    <button class="btn-CTA mt-3">Đặt chỗ ngay</button>
+                </div>
+
+                <!--hình ảnh tour-->
+                <div class="col-12 col-md-6 mt-3">
+
+                    <div class="carousel slide" id="tourImages" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <img src="./assets/images/HA_img1.jpg" alt="Tour Đà Nẵng - Huế - Hội An 5n4đ img1" class="carousel-item active">
+                            <img src="./assets/images/HA_img2.jpg" alt="Tour Đà Nẵng - Huế - Hội An 5n4đ img2" class="carousel-item">
+                            <img src="./assets/images/HA_img3.jpg" alt="Tour Đà Nẵng - Huế - Hội An 5n4đ img3" class="carousel-item">
+                            <img src="./assets/images/HA_img4.jpg" alt="Tour Đà Nẵng - Huế - Hội An 5n4đ img4" class="carousel-item">
+                            <img src="./assets/images/HA_img5.jpg" alt="Tour Đà Nẵng - Huế - Hội An 5n4đ img5" class="carousel-item">
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-4">
+                        <img src="./assets/images/HA_img1.jpg" alt="thumb1" data-bs-target="#tourImages" data-bs-slide-to="0" class="thumb active">
+                        <img src="./assets/images/HA_img2.jpg" alt="thumb2" data-bs-target="#tourImages" data-bs-slide-to="1" class="thumb">
+                        <img src="./assets/images/HA_img3.jpg" alt="thumb3" data-bs-target="#tourImages" data-bs-slide-to="2" class="thumb">
+                        <img src="./assets/images/HA_img4.jpg" alt="thumb4" data-bs-target="#tourImages" data-bs-slide-to="3" class="thumb">
+                        <img src="./assets/images/HA_img5.jpg" alt="thumb5" data-bs-target="#tourImages" data-bs-slide-to="4" class="thumb">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Các tab thông tin -->
+        <section class="py-5">
+
+            <!-- các thẻ tab -->
+            <ul class="nav nav-pills nav-fill mt-3" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="tourInfo" data-bs-toggle="tab" data-bs-target="tourInfo-pane" type="button" role="tab" aria-controls="tourInfo-pane" aria-selected="true">Giới thiệu tour</button>
+                    <button class="nav-link active"data-bs-toggle="tab" data-bs-target="#schedule-pane" type="button" role="tab">Lịch trình</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="schedule" data-bs-toggle="tab" data-bs-target="schedule-pane" type="button" role="tab" aria-controls="schedule-pane" aria-selected="true">Lịch trình</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#services-pane" type="button" role="tab">Dịch vụ kèm theo</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="accomodation" data-bs-toggle="tab" data-bs-target="accomodation-pane" type="button" role="tab" aria-controls="accomodation-pane" aria-selected="true">Chỗ ở & Dịch vụ</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rankings-pane" type="button" role="tab">Đánh giá</button>
                 </li>
             </ul>
-        </div>
-    </section>
+
+            <!-- nội dung thẻ -->
+            <div class="tab-content" id="tabDetails">
+
+                <!-- lịch trình chi tiết -->
+                <div class="tab-pane fade show active" id="schedule-pane">
+                    <div class="schedule-list">
+
+                        <h4>Ngày 1: Tham quan Đà Nẵng – Bán đảo Sơn Trà – Bãi biển Mỹ Khê</h4>
+                        <ul>
+                            <li>Sáng: Đến Đà Nẵng, check-in khách sạn và thưởng thức các món đặc sản như mì Quảng, bánh tráng cuốn thịt heo.</li>
+                            <li>Chiều: Tham quan bán đảo Sơn Trà, viếng chùa Linh Ứng với tượng Phật Bà cao 65m. Sau đó, ghé bãi biển Mỹ Khê, nơi được mệnh danh là một trong những bãi biển đẹp nhất hành tinh, thả mình trong làn nước trong xanh.</li>
+                            <li>Tối: Dùng bữa tại nhà hàng, thưởng thức hải sản tươi ngon rồi dạo phố về đêm, ngắm cầu Rồng phun lửa, check-in cầu sông Hàn hoặc dạo bước trên phố đi bộ Đà Nẵng.</li>
+                        </ul>
+
+                        <h4>Ngày 2: Đại Nội Huế – Chùa Thiên Mụ – Cầu Tràng Tiền</h4>
+                        <ul>
+                            <li>Sáng: Ăn sáng tại Đà Nẵng, sau đó xuất phát đi Huế, băng qua cung đường đèo Hải Vân đầy thơ mộng.</li>
+                            <li>Chiều: Tham quan Đại Nội Huế với các công trình nổi bật như Điện Thái Hòa, Ngọ Môn, Tử Cấm Thành. Tiếp đó, ghé chùa Thiên Mụ, nơi lưu giữ những câu chuyện linh thiêng và khung cảnh yên bình bên dòng sông Hương.</li>
+                            <li>Tối: Dùng bữa với các món đặc sản Huế như bún bò, bánh bèo, cơm hến. Sau đó, tản bộ trên cầu Tràng Tiền, ngắm thành phố về đêm và cảm nhận vẻ đẹp trầm lắng của xứ Huế.</li>
+                        </ul>
+
+                        <h4>Ngày 3: Phố cổ Hội An – Trải nghiệm Hội An về đêm</h4>
+                        <ul>
+                            <li>Sáng: Khởi hành đến Hội An, tham quan nhà cổ, hội quán Phúc Kiến, hội quán Triều Châu — những công trình ghi dấu sự giao thoa văn hóa của phố Hội.</li>
+                            <li>Chiều: Dạo quanh chùa Cầu, biểu tượng của Hội An, rồi thả bộ bên sông Hoài, chụp ảnh và ngắm những mái nhà cổ kính bên dòng nước lặng lờ trôi.</li>
+                            <li>Tối: Tham gia chợ đêm Hội An, hòa mình vào không khí sôi động với những gian hàng thủ công mỹ nghệ và ẩm thực đường phố. Đừng quên thưởng thức cao lầu, bánh mì Phượng, hoành thánh — những món ngon gắn liền với phố cổ.</li>
+                        </ul>
+
+                        <h4>Ngày 4: Vui chơi, giải trí tại VinWonders Nam Hội An</h4>
+                        <ul>
+                            <li>Sáng: Di chuyển đến VinWonders Nam Hội An, nơi hội tụ các hoạt động giải trí và văn hóa độc đáo.</li>
+                            <li>Chiều: Trải nghiệm hàng trăm trò chơi từ nhẹ nhàng đến cảm giác mạnh, tham quan River Safari ngắm nhìn động vật hoang dã, ghé thăm Đảo văn hóa dân gian để hiểu hơn về các làng nghề truyền thống.</li>
+                            <li>Tối: Thưởng thức ẩm thực tại các nhà hàng sang trọng bên trong VinWonders, sau đó trở về Hội An, dạo phố về đêm hoặc tận hưởng sự tĩnh lặng của phố Hội.</li>
+                        </ul>
+
+                        <h4>Ngày 5: Tham quan Hội An – Đà Nẵng – Chợ Cồn</h4>
+                        <ul>
+                            <li>Sáng: Tạm biệt Hội An, quay lại Đà Nẵng, trên đường ghé Ngũ Hành Sơn tham quan các hang động và chùa chiền linh thiêng.</li>
+                            <li>Trưa: Đến chợ Cồn, một trong những khu chợ sầm uất nhất Đà Nẵng, bạn có thể mua đặc sản về làm quà như mực rim me, tré, bánh khô mè.</li>
+                            <li>Chiều: Kết thúc hành trình 5 ngày 4 đêm, chuẩn bị hành lý và di chuyển ra sân bay hoặc ga tàu để trở về.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- tiện ích -->
+                <div class="tab-pane fade" id="services-pane">
+
+                    <h4>Các tiện ích</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-bus"></i> Có xe đưa đón tận nơi</li>
+                        <li><i class="fa-solid fa-money-bills"></i> Được hỗ trợ vé tham quan các địa điểm</li>
+                        <li><i class="fa-solid fa-hotel"></i> Khách sạn lưu trú chuẩn 4 sao</li>
+                        <li><i class="fa-solid fa-bowl-rice"></i> Có phục vụ đủ ba bữa ăn sáng - trưa - tối</li>
+                    </ul>
+
+                    <h4>Bảo hiểm dịch vụ</h4>
+                    <ul>
+                        <li>Hỗ trợ Bảo hiểm tai nạn nếu có các sự cố tai nạn diễn ra (200.000.000đ/người)</li>
+                        <li>Hoàn tiền 100% nếu chuyến đi không thể được thực hiện (do các lí do khách quan)</li>
+                    </ul>
+                </div>
+
+                <!-- đánh giá -->
+                <div class="tab-pane fade" id="rankings-pane">
+                    <h4>Các khách hàng nói gì về tour du lịch này?</h4>
+                    <div class="comment">
+                        <img src="./assets/images/user_avt1.jpg" alt="user1" class="user-avatar">
+                        <div>    
+                            <p><span class="username">Hoàng Huy</span> • 3 ngày trước<p>
+                            <p class="stars">⭐⭐⭐⭐⭐</p>
+                            <p>"Chuyến đi này thật tuyệt vời! Phong cảnh và các địa điểm tham quan vô cùng đẹp và thoải mái, và những hướng dẫn viên cũng nhiệt tình nữa!"</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="./assets/images/user_avt2.jpg" alt="user2" class="user-avatar">
+                        <div>    
+                            <p><span class="username">Minh Anh</span> • 1 tuần trước<p>
+                            <p class="stars">⭐⭐⭐⭐</p>
+                            <p>"Đây là một chuyến đi quá hợp lí để xả stress đấy😊"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- tour khác -->
+        <section class="py-5">
+            <div class="row">
+                <h4 class="display-5" style="text-align: center;">Gợi ý các chuyến du lịch khác từ Traveleeka</h2>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card card-product h-60">
+                        <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="header-5">Hội An 5n4đ</h5>
+                            <p class="price">$3600</p>
+                            <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                            <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card card-product h-60">
+                        <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="header-5">Hội An 5n4đ</h5>
+                            <p class="price">$3600</p>
+                            <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                            <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card card-product h-60">
+                        <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="header-5">Hội An 5n4đ</h5>
+                            <p class="price">$3600</p>
+                            <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                            <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card card-product h-60">
+                        <img src="https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg" alt="Hội An" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="header-5">Hội An 5n4đ</h5>
+                            <p class="price">$3600</p>
+                            <p class="truncate">Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.</p>
+                            <button class="btn-CTA" type="button" onclick="location.href='product_detail.html'">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- chân trang -->
     <footer class="mt-auto py-5">

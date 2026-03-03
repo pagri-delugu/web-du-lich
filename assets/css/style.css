@@ -1,3 +1,9 @@
+/* ---CÁC STYLE CHUNG TRÊN TOÀN BỘ TRANG WEB--- */
+
+* {
+  color: #404257
+}
+
 /* nhóm navbar */
 .navbar {
     background-color: #71d6f4;
@@ -11,8 +17,7 @@ footer {
   h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #404257;
-    margin-bottom: 20px
+    margin-bottom: 15px
   };
 
   p, a {
@@ -66,7 +71,7 @@ section, footer {
 }
 
 .btn-CTA:active {
-  background-color: #474e68;
+  background-color: #404257;
   color: #ffffff;
   box-shadow: #6b728e 0px 0px 0px 0px;
   transform: translateY(10px);
@@ -78,6 +83,24 @@ section, footer {
   margin-bottom: 25px;
   border-radius: 40px;
   transition: all 0.5s ease;
+
+  img.card-img-top {
+    border-radius: 40px;
+  };
+
+  p.price {
+    color: #71d6f4;
+    font-size: 20px
+  };
+
+  p.truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
 }
 
 .card-product:hover {
