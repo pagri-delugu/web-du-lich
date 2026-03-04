@@ -1,0 +1,38 @@
+/* ---CSS cho trang Blog--- */
+
+/* tiêu đề */
+.hero-title {
+    justify-content: center;
+    text-align: center;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+/* search box */
+.search-box {
+    justify-content: center;
+    width: 500px;
+}
+
+/* bài viết */
+.card-blog {
+    margin-bottom: 25px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+
+    img.card-img-top {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    p.post-date {
+        font-size: 14px;
+    }
+}
+
+.card-blog:hover {
+    transform: scale(1.05);
+    box-shadow: #6b728e 0px 7px 29px 0px;
+}

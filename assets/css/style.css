@@ -85,7 +85,8 @@ section, footer {
   transition: all 0.5s ease;
 
   img.card-img-top {
-    border-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
   };
 
   p.price {
@@ -104,10 +105,8 @@ section, footer {
 }
 
 .card-product:hover {
-  background-color: #ffffff;
   transform: scale(1.05);
   box-shadow: #6b728e 0px 7px 29px 0px;
-  
 }
 
 @media screen and (max-width: 768px) {

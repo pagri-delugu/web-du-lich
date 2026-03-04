@@ -1,11 +1,11 @@
-/* ---thông tin tour--- */
+/* ---CSS cho thông tin tour--- */
 
 /* chi tiết tour */
-h2 {
+h1 {
     margin-bottom: 15px;
 }
 
-h3.price {
+h2.price {
     color: #71d6f4;
     font-size: 30px;
 
