@@ -1,0 +1,38 @@
+/* ---CSS cho liên hệ--- */
+
+/* contact, feedback */
+.contact-title,
+.feedback-title {
+    text-align: center;
+}
+
+.contact-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.feedback-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}    
+
+.feedback-form {
+    max-width: 500px;
+}
+
+div.info-box {
+    box-shadow: #6b728e 0 0 15px -5px;
+    border-radius: 30px;
+    padding: 20px;
+    gap: 10px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+iframe {
+    box-shadow: #6b728e 0 0 15px -5px;
+    border-radius: 30px;
+}

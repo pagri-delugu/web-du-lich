@@ -12,50 +12,52 @@
 <body>
     
     <!--Thanh điều hướng-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
 
-            <!-- brand -->
-            <a href="./index.html" class="navbar-brand">
-                <img src="./assets/images/logo.jpg" alt="mybrand" class="img-thumbnail img-fluid" width="40" height="40">
-                Traveleeka
-            </a>
+                <!-- brand -->
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./assets/images/logo.jpg" alt="mybrand" class="img-thumbnail img-fluid" width="40" height="40">
+                    Traveleeka
+                </a>
 
-            <!-- toggle ẩn các nút -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContents">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navContents">
+                <!-- toggle ẩn các nút -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContents">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContents">
 
-                <!-- thanh tìm kiếm -->
-                <form role="search">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Tìm kiếm">
-                        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </form>
+                    <!-- thanh tìm kiếm -->
+                    <form role="search">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Tìm kiếm">
+                            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
 
-                <!-- các nút điều hướng -->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Danh mục tour</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./products.html" class="dropdown-item">Tour dài ngày</a></li>
-                            <li><a href="./products.html" class="dropdown-item">Tour ngắn ngày</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="./cart.html" class="nav-link">Đặt chỗ của tôi</a></li>
-                    <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
-                    <li class="nav-item"><a href="./login.html" class="nav-link">Đăng nhập</a></li>
-                </ul>
+                    <!-- các nút điều hướng -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Danh mục tour</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./products.html" class="dropdown-item">Tour dài ngày</a></li>
+                                <li><a href="./products.html" class="dropdown-item">Tour ngắn ngày</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="./cart.html" class="nav-link">Đặt chỗ của tôi</a></li>
+                        <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+                        <li class="nav-item"><a href="./login.html" class="nav-link">Đăng nhập</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     
     <main class="container py-5"> <!--featured collection-->
         <section>
-            <h1 class="display-3 py-5" style="text-align: center;">Tìm tour du lịch hấp dẫn cùng Traveleeka</h1>
+            <h1 class="display-3 pb-5" style="text-align: center;">Tìm tour du lịch hấp dẫn cùng Traveleeka</h1>
             <div class="row">
 
                 <div class="filter-bar col-lg-3 col-md-4 col-sm-12"> <!--bộ lọc-->
@@ -68,16 +70,6 @@
                                 <input type="range" class="form-range" min="0" max="5000" value="3500" id="priceRange">
                                 $<output for="priceRange" id="rangeValue" aria-hidden="true"></output>
 
-                                <script>
-                                    const rangeInput = document.getElementById('priceRange');
-                                    const rangeOutput = document.getElementById('rangeValue');
-
-                                    rangeOutput.textContent = rangeInput.value;
-
-                                    rangeInput.addEventListener('input', function() {
-                                        rangeOutput.textContent = this.value;
-                                    });
-                                </script>
                             </div>
                             <div class="py-1"> <!--Đánh giá-->
                                 <p>Đánh giá</p>
@@ -251,7 +243,7 @@
                         <li><a href="./index.html" class="transition">Trang Chủ</a></li>
                         <li><a href="./products.html">Sản Phẩm</a></li>
                         <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="#">Liên Hệ</a></li>
+                        <li><a href="./contact.html">Liên Hệ</a></li>
                     </ul>
                 </div>
 
@@ -281,6 +273,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const rangeInput = document.getElementById('priceRange');
+        const rangeOutput = document.getElementById('rangeValue');
+
+        rangeOutput.textContent = rangeInput.value;
+
+        rangeInput.addEventListener('input', function() {
+            rangeOutput.textContent = this.value;
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
