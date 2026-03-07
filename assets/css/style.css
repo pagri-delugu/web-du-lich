@@ -1,7 +1,7 @@
 /* ---CÁC STYLE CHUNG TRÊN TOÀN BỘ TRANG WEB--- */
 
 * {
-  color: #404257
+  color: #404257;
 }
 
 /* nhóm navbar */
@@ -109,6 +109,3 @@ section, footer {
   box-shadow: #6b728e 0px 7px 29px 0px;
 }
 
-@media screen and (max-width: 768px) {
-
-}
