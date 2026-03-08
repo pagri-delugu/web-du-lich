@@ -51,6 +51,12 @@ section, footer {
 }
 
 /* nút bấm */
+button.btn.btn-primary {
+  background-color: #6b728e;
+  border: none !important;
+  color: #ffffff;
+}
+
 .btn-CTA {
   padding: 17px 40px;
   border-radius: 50px;
