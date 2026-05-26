@@ -93,6 +93,7 @@ button.btn.btn-primary {
   img.card-img-top {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    max-height: 200px;   
   };
 
   p.price {
