@@ -4,8 +4,8 @@
         "name": "Đà Nẵng - Huế - Hội An 5n4đ",
         "price": "$3600",
         "description": "Hành trình từ Đà Nẵng đến Huế đưa ta băng qua những cung đường ven biển tuyệt đẹp, nơi đèo Hải Vân ôm trọn mây trời và sóng nước. Rời Huế mộng mơ với nét trầm mặc của kinh thành xưa, ta xuôi về Hội An – phố cổ lung linh trong ánh đèn lồng khi đêm xuống. Mỗi điểm dừng chân là một gam màu khác biệt: Đà Nẵng năng động và hiện đại, Huế sâu lắng và cổ kính, Hội An dịu dàng và hoài niệm. Ba thành phố, một hành trình – nơi thiên nhiên, lịch sử và con người hòa quyện tạo nên những ký ức khó quên.",
-        "ratings": 5,
-        "accomodation": "breakfast",
+        
+        "accomodation_ratings": ["breakfast", "5star"],
         "card_name": "Hội An 5n4đ",
         "card_description": "Hoi An is a place where the bold march of progress peters into a leisurely amble. In this one-time trading port, the Thu Bon River meanders past crumbling shop houses and weathered pagodas, while sampans come and go from the old ferry quay.",
         "card_image": "https://i.pinimg.com/736x/a9/df/3e/a9df3ef30a5426a16398726ea08af5b1.jpg",
@@ -16,8 +16,8 @@
         "name": "Hà Nội - Hải Phòng 3n2đ",
         "price": "$1800",
         "description": "Hành trình khám phá sự kết hợp hoàn hảo giữa nét cổ kính của thủ đô nghìn năm văn hiến và sự sôi động của thành phố hoa phượng đỏ. Du khách sẽ được dạo quanh 36 phố phường Hà Nội cổ kính, thưởng thức ẩm thực tinh tế, rồi xuôi về Hải Phòng để trải nghiệm food tour đình đám và tận hưởng làn gió biển trong lành tại đảo ngọc Cát Bà.",
-        "ratings": 4,
-        "accomodation": "airport",
+
+        "accomodation_ratings": ["airport", "4star"],
         "card_name": "Hải Phòng 3n2đ",
         "card_description": "Haiphong entices travelers with its colonial architecture, vibrant food scene, and the raw natural beauty of Cat Ba Island. It is a city where industrial energy meets the tranquil rhythms of the Gulf of Tonkin.",
         "card_image": "https://luxtour.com.vn/wp-content/uploads/2023/01/ban-do-du-lich-hai-phong-1-1.jpg",
@@ -28,8 +28,8 @@
         "name": "Chợ nổi Cái Răng - Khám phá vẻ đẹp Cần Thơ 2n1đ",
         "price": "$1200",
         "description": "Về với Tây Đô để cảm nhận trọn vẹn vẻ đẹp bình dị và hiếu khách của vùng sông nước miền Tây. Điểm nhấn của hành trình là trải nghiệm đón bình minh trên chợ nổi Cái Răng, len lỏi giữa hàng trăm ghe xuồng tấp nập xuôi ngược. Bạn cũng sẽ được ghé thăm những miệt vườn trĩu quả và thưởng thức những món ăn đậm chất Nam Bộ.",
-        "ratings": 5,
-        "accomodation": "breakfast",
+
+        "accomodation_ratings": ["breakfast", "5star"],
         "card_name": "Cần Thơ 2n1đ",
         "card_description": "Can Tho invites you into the heart of the Mekong Delta. Famous for its bustling Cai Rang Floating Market, rustic fruit orchards, and scenic canals, it offers a glimpse into a peaceful, water-centric way of life.",
         "card_image": "https://gonatour.vn/vnt_upload/news/08_2020/cho_noi_cai_rang_du_lich_gonatour.jpg",
@@ -40,8 +40,8 @@
         "name": "Hà Giang - Sắc màu Tây Bắc 4n3đ",
         "price": "$2900",
         "description": "Hành trình chinh phục những cung đường đèo uốn lượn và hùng vĩ bậc nhất Việt Nam. Từ cao nguyên đá Đồng Văn gai góc nhưng đầy cuốn hút, đến đỉnh Mã Pí Lèng huyền thoại nhìn xuống dòng sông Nho Quế xanh màu ngọc bích. Tour du lịch mang lại trải nghiệm hòa mình vào văn hóa đặc sắc của đồng bào vùng cao.",
-        "ratings": 5,
-        "accomodation": "breakfast",
+
+        "accomodation_ratings": ["breakfast", "3star"],
         "card_name": "Hà Giang 4n3đ",
         "card_description": "Ha Giang is a land of otherworldly landscapes, where towering limestone peaks meet winding mountain passes. Home to diverse ethnic communities, it offers an unforgettable adventure into Vietnam's rugged northern frontier.",
         "card_image": "https://th.bing.com/th/id/R.557b9b115c4ea8fe4faed20e945fd3be?rik=Tev6X6ClJnB96w&riu=http%3a%2f%2fbaohagiang.vn%2ffile%2f4028eaa4679b32c401679c0c74382a7e%2f042023%2f22_20230419145608.jpg&ehk=7Yh%2forZrMhHsVlQLnBQMtEjBsdMkOI4HN%2bkWDeyl1nw%3d&risl=&pid=ImgRaw&r=0",

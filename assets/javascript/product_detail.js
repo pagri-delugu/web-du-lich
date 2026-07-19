@@ -1,7 +1,7 @@
 async function loadData() {
     try {
         fetch("assets/data/tours.json")
-            .then(res => res.json())
+            .then(response => response.json())
             .then(tours => {
                 const tour = tours.find(item => item.id == getParameterID())
                 renderDetails(tour)
